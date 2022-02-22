@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/styles/styles.css">
+</head>
+<body style="background-image: url('assets/images/bg1.jpg');">
+    <header id="header">
+        <div class="topnav">
+            <a class="nav-link font-dark" onclick="openToDos()">TO DO LIST</a>
+            <div class="form-popup" id="myForm">
+                <form class="form-container">
+                    <!-- <button type="button" class="btn cancel" onclick="closeForm()">Close</button> -->
+                    <h1>MY TO DO LIST</h1>
+                    
+                    <div id="myDIV" class="add_Todo">
+                        <input type="text" id="myInput">
+                        <span onclick="newElement()" class="addBtn">Add</span>
+                    </div>
+                      
+                    <ul id="myUL">
+                        <li>Hit the gym</li>
+                        <li class="checked">Pay bills</li>
+                        <li>Meet George</li>
+                        <li>Buy eggs</li>
+                        <li>Read a book</li>
+                        <li>Organize office</li>
+                    </ul>
+
+                </form>
+            </div>
+            <a class="nav-link font-dark">QOUTES</a>
+        </div>
+        <div class="logo">
+            <a class="nav-link font-dark date"></a>
+        </div>
+    </header>
+
+    <main class="container font-dark">
+        <span class="time font-dark"></span>
+
+        <p class="font-dark">Good Day, <span contenteditable="true">[ Input your Name Here ]</span> !</p>
+
+        <form class="toDos font-dark">
+            <input type="text" id="task" placeholder="My main focus for the day is">
+        </form>
+        <br />
+        <div id="mainTask" class="font-dark"></div>
+    </main>
+</body>
+
+<footer>
+    <p id="qoutes" class="font-dark">“Believe you can and you're halfway there.” - Theodore Roosevelt</p>
+</footer>
+<script src="assets/js/main.js"></script>
+</html>

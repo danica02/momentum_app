@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@200;300;400&display=swap');
+
+body{
+    text-align: center;
+    background-size: 100%;
+}
+
+#header {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.font-dark{
+    color: #86592d;
+    font-family: 'Roboto Serif', sans-serif;
+}
+
+.topnav {
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    text-align: center;
+    text-decoration: none;
+} 
+
+.topnav a:hover {
+    background-color: #86592d;
+    color: #ddd;
+    border-radius: 0.5rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    cursor: pointer;
+    padding: 0 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.container{
+    display: grid;
+    justify-content: center;
+    padding-top: 10rem;
+}
+
+.container p{
+    font-size: 3rem;
+}
+
+.time {
+    font-size: 8rem;
+}
+
+.toDos {
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+}
+
+input {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid;
+    padding: 1em 0 .8em;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: inherit;
+    font-weight: 300;
+    line-height: 1.5;
+    color: inherit;
+    outline: none;
+}
+input::placeholder { 
+    color: #c68c53;
+    font-size: 1.5rem;
+}
+
+#mainTask {
+    font-size: 2rem;
+}
+
+#qoutes {
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 2rem;
+    position: sticky;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* TO DO LIST FORM */
+
+.form-popup {
+    display: none;
+    position: fixed;
+    top: 5rem;
+    left: 15px;
+}
+  
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+    font-size: 11px;
+    border-radius: 0.5rem;
+}
+  
+.form-container .cancel {
+    background-color: red;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    background: #ecd8c6;
+    font-size: 18px;
+    transition: 0.2s;
+    text-align: left;
+}
+
+ul li:hover {
+    background: #e6cab3;
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+    background: #86592d;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+.add_Todo {
+    background-color: #e48f89;
+    padding: 1rem;
+    color: white;
+    text-align: center;
+}
+
+  /* Style the close button */
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+}
+  
+  .close:hover {
+    background-color: #e48f89;
+    color: white;
+}
+
+/* Clear floats after the header */
+.add_Todo:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the input */
+  .add_Todo input {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 66%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+    color: #000;
+    background-color: #fff;
+  }
+  
+  /* Style the "Add" button */
+  .addBtn {
+    padding: 13px 0 12px 0;
+    width: 25%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+  }
+  
+  .addBtn:hover {
+    background-color: #bbb;
+  }
