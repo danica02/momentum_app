@@ -14,7 +14,7 @@ function dateTime() {
     // Check whether AM or PM
     var newformat = hours >= 12 ? 'PM' : 'AM'; 
 
-    // Check whether morning or afternoon
+    // Check whether morning (12AM - 11PM), afternoon (12PM - 5PM), evening (6PM - 11PM)
     var newGreetings = ( hours < 12 ) ? 'Good Morning' : 
                        (( hours <= 17 && hours >= 12 ) ? 'Good Afternoon' : 'Good Evening'); 
     
