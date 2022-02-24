@@ -13,7 +13,7 @@
             <a class="nav-link font-dark" onclick="openToDos()">TO DO LIST</a>
             <div class="form-popup" id="myForm">
                 <form class="form-container">
-                    <!-- <button type="button" class="btn cancel" onclick="closeForm()">Close</button> -->
+                    <button type="button" class="btn cancel" onclick="closeForm()">x</button>
                     <h1>MY TO DO LIST</h1>
                     
                     <div id="myDIV" class="add_Todo">
@@ -21,13 +21,19 @@
                         <span onclick="newElement()" class="addBtn">Add</span>
                     </div>
                       
-                    <ul id="myUL">
-                        <li>Make a JavaScipt project</li>
-                    </ul>
+                    <ul id="myUL"></ul>
 
                 </form>
             </div>
-            <a class="nav-link font-dark">QOUTES</a>
+            <a class="nav-link font-dark" onclick="openQoutes()">QOUTES</a>
+            <div class="form-qoutes" id="myQoutes">
+                <form class="form-container">
+                    <button type="button" class="btn cancel" onclick="closeQoutes()">X</button>                  
+                    <form class="toDos font-dark">
+                        <input type="text" id="kowts" placeholder="My qoutes for the day">
+                    </form>
+                </form>
+            </div>
         </div>
         <div class="logo">
             <a class="nav-link font-dark date"></a>
@@ -37,13 +43,16 @@
     <main class="container font-dark">
         <span class="time font-dark"></span>
 
-        <p class="font-dark">Good Day, <span contenteditable="true">[ Input your Name Here ]</span> !</p>
+        <p class="font-dark">
+            <span class="greetings"> </span>
+            <span contenteditable="true">Danica</span> !
+        </p>
 
         <form class="toDos font-dark">
             <input type="text" id="task" placeholder="My main focus for the day is">
         </form>
         <br />
-        <div id="mainTask" class="font-dark"></div>
+        <div id="mainTask" class="font-dark">Make a Momentum app using JavaScipt</div>
     </main>
 </body>
 
