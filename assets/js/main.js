@@ -120,25 +120,6 @@ newQoutes.addEventListener("keydown", function(event) {
     }
 });
 
-//----------------- change background -------------------//
-
-// window.onload = function () {
-//   // Array of Images
-//   var backgroundImg = [ "assets/images/bg1.jpg",
-//                         "assets/images/bg2.jpg",
-//                         "assets/images/bg3.jpg",
-//                         "assets/images/bg4.jpg",
-//                         "assets/images/bg5.jpg",
-//                         "assets/images/bg6.jpg" ]
-
-//   function changeImage() {   
-//     var i = Math.floor((Math.random() * 6));
-//     document.body.style.backgroundImage = "url('"+backgroundImg[i]+"')";
-
-//   }
-//   setInterval(changeImage, 5000);
-// }
-
 //----------------- random qoutes -------------------//
 
 // Array of qoutes
