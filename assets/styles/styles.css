@@ -233,3 +233,22 @@ ul li.checked::before {
     top: 5rem;
     left: 130px;
 }
+
+#mainTask.checked {
+    color: #fff;
+    text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+#mainTask.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    height: 25px;
+    width: 14px;
+    margin-left: -2rem;
+    margin-top: -6px;
+}

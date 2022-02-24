@@ -43,10 +43,19 @@ var input = document.getElementById("task");
 input.addEventListener("keydown", function(event) {
     if (event.keyCode === 13) {
     event.preventDefault();
+    document.getElementById("mainTask").classList.remove("checked");
     document.getElementById("mainTask").innerHTML = input.value;
     input.value = '';
     }
 });
+
+// Add a "checked" symbol when clicking on a list item
+var doneTask = document.getElementById('mainTask');
+doneTask.addEventListener('click', function(ev) {
+  if (ev.target.id === 'mainTask') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
 
 //----------------- to do list -------------------//
 
@@ -128,13 +137,13 @@ var randomQoutes = [ " “Believe you can and you're halfway there.” - Theodor
                      " “Success means having the courage, the determination and the will to become the person you believe you were meant to be.” - George Sheehan ",
                      " “Victory is always possible for the person who refuses to stop fighting.” - Napoleon Hill ",
                      " “If you have the courage to begin, you have the courage to succeed.” - David Viscott ",
-                     " “To accomplish great things, we must not only act, but also dream, not only plan, but also believe.” - Anatole France " ]
+                     " “To accomplish great things, we must not only act, but also dream, not only plan, but also believe.” - Anatole France ", 
+                     " “Learn to love yourself first.” - Unknown " ]
 
 function changeImage() {   
-  var i = Math.floor((Math.random() * 6));
+  var i = Math.floor((Math.random() * randomQoutes.length));
   document.getElementById("qoutes").innerHTML = randomQoutes[i]
-
 }
-setInterval(changeImage, 10000);
+setInterval(changeImage, 5000);
 
 
